@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.aboutUs {
+    background: beige;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-radius: 15%;
+
+}
+
+.aboutUs h2 {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-left: 5%;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.aboutUs p {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-left: 8%;
+    margin-top: 30px;
+
+}
+

@@ -1,0 +1,145 @@
+/* ProductFilter.css - Versión Completa */
+
+.listaPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  position: relative; /* Contenedor posicionado para el aside absoluto */
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Filtros - Estilos originales preservados + posición absoluta */
+.filters {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  /* Nuevas propiedades para scroll absoluto */
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  bottom: 2rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+/* Conservamos todos tus estilos originales de filtros */
+.filters h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.filters-category {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.filter-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-category h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.filter-category label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: brown;
+}
+
+/* Área de productos - Ajuste para posición absoluta del aside */
+.our-products {
+  flex: 1;
+  min-width: 0;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-left: 350px; /* 300px del aside + 50px de separación */
+}
+
+.options h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.type-options {
+  margin-top: 1rem;
+}
+
+.type-options label {
+  font-size: 0.95rem;
+  color: #333;
+  margin-left: auto;
+}
+
+.type-options select {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+/* Responsive - Vuelta al diseño original en móviles */
+@media (max-width: 1024px) {
+  .listaPrincipal {
+    padding: 1.5rem;
+  }
+  
+  .our-products {
+    margin-left: 320px; /* Reducción proporcional */
+  }
+}
+
+@media (max-width: 768px) {
+  .listaPrincipal {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .filters {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 1rem;
+  }
+  
+  .our-products {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .listaPrincipal {
+    padding: 2rem 3rem;
+  }
+}

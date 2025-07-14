@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .navbar-brand .brand-name {
+  font-family: "Pacifico", cursive !important;
+  font-size: 4rem !important;
+  color: #641e16 !important;
+  line-height: 1;
+  font-weight: normal !important;
+  display: inline-block;
+  margin-left: 3.5vw;
+}
+
+.navbar {
+  background-color: beige !important;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  height: 100px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #333 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6c5ce7 !important;
+}
+
+.btn-outline-secondary {
+  border-color: #6c5ce7 !important;
+  color: #6c5ce7 !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c5ce7 !important;
+  color: #fff !important;
+}
+
+.navbar .badge {
+  font-size: 0.7rem;
+  padding: 0.35em 0.5em;
+}
+
+/*   Responsive   */
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand .brand-name {
+    font-size: 2.5rem !important; 
+    margin-left: 0 !important;
+    line-height: 1.2;
+    word-break: break-word; 
+  }
+  
+  .navbar-brand img {
+    height: 70px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .navbar .navbar-brand .brand-name {
+    font-size: 1.8rem !important; 
+    white-space: normal !important; 
+    display: block !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .navbar-brand img {
+    height: 50px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar .navbar-brand .brand-name {
+    font-size: 2.5rem !important; 
+    word-spacing: 100vw; 
+  }
+}

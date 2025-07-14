@@ -1,0 +1,13 @@
+.home-wrapper {
+  background-color: #f5f5dc; 
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.home-title {
+  text-align: center;
+  color: #641e16;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-family: 'Georgia', serif;
+}

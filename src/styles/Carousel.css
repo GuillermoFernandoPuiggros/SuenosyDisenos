@@ -1,0 +1,20 @@
+.carousel-image {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  object-fit: cover;
+  display: block;
+}
+
+/*   Responsive   */
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 25vh;
+  }
+}
